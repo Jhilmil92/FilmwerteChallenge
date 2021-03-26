@@ -1,12 +1,19 @@
 ﻿
+using FilmwerteChallenge.StorageSources.Classes;
 using System;
 using System.Collections.Generic;
+using System.IO;
+using System.Linq;
 
 namespace FilmwerteChallenge
 {
     /// <summary>
     /// Represents the main program of the challenge.
     /// </summary>
+    struct FileStruct
+    {
+
+    };
     class Program
     {
         /// <summary>
@@ -52,24 +59,70 @@ namespace FilmwerteChallenge
             // see #1
             IEnumerable<Movie> allMovies = storage.GetAllVideos();
             Console.WriteLine("All movies:");
-            foreach (Movie movie in allMovies)
-                Console.WriteLine(movie.Id);
+            Console.WriteLine("-----------");
+            Console.WriteLine();
+            foreach (Movie movie in allMovies.ToArray())
+            {
+                Console.WriteLine($"Movie Id : {movie.Id}");
+                Console.WriteLine($"Title : {movie.Title}");
+                Console.WriteLine($"Duration : {movie.Duration} seconds");
+                Console.WriteLine($"Video Uri : { movie.VideoUri}");
+                Console.WriteLine();
+            }
 
             // see #2
-            IEnumerable<Movie> query1 = storage.GetAllVideos(); // TODO
+            int minimumDuration = 30 * 60; //duration in seconds.
+            IEnumerable<Movie> query1 = storage.GetAllVideos().Where(movie => movie.Duration > minimumDuration); // TODO
             Console.WriteLine("Query 1:");
-            foreach (Movie movie in query1)
-                Console.WriteLine(movie.Id);
+            Console.WriteLine("--------");
+            Console.WriteLine();
+            foreach (Movie movie in allMovies.ToArray())
+            {
+                Console.WriteLine($"Movie Id : {movie.Id}");
+                Console.WriteLine($"Title : {movie.Title}");
+                Console.WriteLine($"Duration : {movie.Duration} seconds");
+                Console.WriteLine($"Video Uri : { movie.VideoUri}");
+                Console.WriteLine();
+            }
 
-            IEnumerable<Movie> query2 = storage.GetAllVideos(); // TODO
+            var searchTerm = "youtube";
+            IEnumerable<Movie> query2 = storage.GetAllVideos().Where(movie => movie.VideoUri.Contains(searchTerm)); // TODO
             Console.WriteLine("Query 2:");
-            foreach (Movie movie in query2)
-                Console.WriteLine(movie.Id);
-                
-            IEnumerable<Movie> query3 = storage.GetAllVideos(); // TODO
+            Console.WriteLine("--------");
+            foreach (Movie movie in query2.ToArray())
+            {
+                Console.WriteLine($"Movie Id : {movie.Id}");
+                Console.WriteLine($"Title : {movie.Title}");
+                Console.WriteLine($"Duration : {movie.Duration} seconds");
+                Console.WriteLine($"Video Uri : {movie.VideoUri}");
+                Console.WriteLine();
+            }
+
+            //IEnumerable<Movie> query3 = storage.GetAllVideos().Any(a=>a.ImdbId); // TODO
+            IEnumerable<Movie> query3 = storage.GetAllVideos().Where(a=>!(string.IsNullOrEmpty(a.ImdbId))); // TODO
             Console.WriteLine("Query 3:");
-            foreach (Movie movie in query3)
-                Console.WriteLine(movie.Id);
+            Console.WriteLine("--------");
+            foreach (Movie movie in query3.ToArray())
+            {
+                //What is the total runtime?
+                Console.WriteLine($"Movie Id : {movie.Id}");
+                Console.WriteLine($"Title : {movie.Title}");
+                Console.WriteLine($"Duration : {movie.Duration} seconds");
+                Console.WriteLine($"Imdb Id : {movie.ImdbId}");
+                Console.WriteLine($"Video Uri : { movie.VideoUri}");
+                Console.WriteLine();
+            }
+
+           
+
+            //var storageContext = new Context<FileStruct>();
+            //storageContext.SetStrategy(new FileStrategy());
+            //Stream stream = new FileStream("");
+            //storageContext.PerformRead(stream);
+
+
+
+
         }
     }
 }

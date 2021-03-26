@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29905.134
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmwerteChallenge", "FilmwerteChallenge.csproj", "{73C7AD47-C209-4307-B181-A6D392BE7384}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FilmwerteChallenge.StorageSystem", "..\FilmwerteChallenge.StorageSystem\FilmwerteChallenge.StorageSystem.csproj", "{DCF02BA2-465B-4B1A-AEF5-21CD0B677E3B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{73C7AD47-C209-4307-B181-A6D392BE7384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{73C7AD47-C209-4307-B181-A6D392BE7384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{73C7AD47-C209-4307-B181-A6D392BE7384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{73C7AD47-C209-4307-B181-A6D392BE7384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DCF02BA2-465B-4B1A-AEF5-21CD0B677E3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DCF02BA2-465B-4B1A-AEF5-21CD0B677E3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DCF02BA2-465B-4B1A-AEF5-21CD0B677E3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DCF02BA2-465B-4B1A-AEF5-21CD0B677E3B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {6BF8A111-FFBD-407E-821D-EBF32C6F5584}
+	EndGlobalSection
+EndGlobal

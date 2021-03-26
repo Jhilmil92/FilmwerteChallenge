@@ -1,4 +1,4 @@
-
+using FilmwerteChallenge.Interfaces;
 using System;
 
 namespace FilmwerteChallenge
@@ -6,7 +6,7 @@ namespace FilmwerteChallenge
     /// <summary>
     /// Represents a set of metadata of a movie.
     /// </summary>
-    public class Movie
+    public class Movie : IVideo
     {
         /// <summary>
         /// Gets or sets the ID of the movie, which is globally unique.
