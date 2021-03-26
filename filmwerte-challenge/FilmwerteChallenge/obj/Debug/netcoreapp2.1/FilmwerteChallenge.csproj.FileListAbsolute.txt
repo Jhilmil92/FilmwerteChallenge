@@ -1,0 +1,10 @@
+D:\Filmerte Assignment\filmwerte-challenge\filmwerte-challenge\FilmwerteChallenge\bin\Debug\netcoreapp2.1\FilmwerteChallenge.deps.json
+D:\Filmerte Assignment\filmwerte-challenge\filmwerte-challenge\FilmwerteChallenge\bin\Debug\netcoreapp2.1\FilmwerteChallenge.runtimeconfig.json
+D:\Filmerte Assignment\filmwerte-challenge\filmwerte-challenge\FilmwerteChallenge\bin\Debug\netcoreapp2.1\FilmwerteChallenge.runtimeconfig.dev.json
+D:\Filmerte Assignment\filmwerte-challenge\filmwerte-challenge\FilmwerteChallenge\bin\Debug\netcoreapp2.1\FilmwerteChallenge.dll
+D:\Filmerte Assignment\filmwerte-challenge\filmwerte-challenge\FilmwerteChallenge\bin\Debug\netcoreapp2.1\FilmwerteChallenge.pdb
+D:\Filmerte Assignment\filmwerte-challenge\filmwerte-challenge\FilmwerteChallenge\obj\Debug\netcoreapp2.1\FilmwerteChallenge.csprojAssemblyReference.cache
+D:\Filmerte Assignment\filmwerte-challenge\filmwerte-challenge\FilmwerteChallenge\obj\Debug\netcoreapp2.1\FilmwerteChallenge.AssemblyInfoInputs.cache
+D:\Filmerte Assignment\filmwerte-challenge\filmwerte-challenge\FilmwerteChallenge\obj\Debug\netcoreapp2.1\FilmwerteChallenge.AssemblyInfo.cs
+D:\Filmerte Assignment\filmwerte-challenge\filmwerte-challenge\FilmwerteChallenge\obj\Debug\netcoreapp2.1\FilmwerteChallenge.dll
+D:\Filmerte Assignment\filmwerte-challenge\filmwerte-challenge\FilmwerteChallenge\obj\Debug\netcoreapp2.1\FilmwerteChallenge.pdb
